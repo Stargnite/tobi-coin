@@ -1,0 +1,91 @@
+<!-- SWAP (Live Widgets) -->
+ <section id="swap" class="pt-36">
+   <div class="card p-6 backdrop-blur-lg">
+     <div class="flex items-center justify-between flex-wrap gap-3">
+       <h2 class="hd text-3xl">Swap for $TOBI</h2>
+       <div class="text-xs text-mute flex gap-2">
+         <span class="badge">Live widgets</span
+         ><span class="badge">Paste token/mint</span>
+       </div>
+     </div>
+     <div class="grid md:grid-cols-2 gap-6 mt-4">
+       <!-- Solana / Jupiter -->
+       <div class="card p-4">
+         <div class="flex items-center justify-between gap-3">
+           <b class="hd text-xl">Solana — Jupiter</b>
+           <a
+             class="text-xs underline"
+             href="https://jup.ag"
+             target="_blank"
+             rel="noopener"
+             >jup.ag</a
+           >
+         </div>
+         <label class="text-sm mt-3"
+           >TOBI Mint (Solana)
+           <input
+             id="solMint"
+             class="mt-1 w-full h-11 rounded-md bg-white/5 border border-white/10 px-3"
+             placeholder="Paste SPL mint (e.g., So111... for SOL)"
+           />
+         </label>
+         <div class="mt-3">
+           <button id="mountJup" class="btn btn-primary w-full">
+             Open Jupiter Terminal
+           </button>
+         </div>
+         <div id="jupWrap" class="mt-3"></div>
+         <p class="text-xs text-mute mt-2">
+           You’ll interact directly with Jupiter. Use Phantom/Backpack.
+         </p>
+       </div>
+   
+       <!-- EVM / 1inch -->
+       <div class="card p-4">
+         <div class="flex items-center justify-between gap-3">
+           <b class="hd text-xl">EVM — 1inch</b>
+           <a
+             class="text-xs underline"
+             href="https://app.1inch.io"
+             target="_blank"
+             rel="noopener"
+             >1inch</a
+           >
+         </div>
+         <div class="grid md:grid-cols-2 gap-3 mt-3">
+           <label class="text-sm"
+             >Chain
+             <select
+               id="inchChain"
+               class="mt-1 w-full h-11 rounded-md bg-white/5 border border-white/10 px-3"
+             >
+               <option value="1">Ethereum</option>
+               <option value="56">BNB Chain</option>
+               <option value="137">Polygon</option>
+               <option value="42161">Arbitrum</option>
+               <option value="10">OP Mainnet</option>
+             </select>
+           </label>
+           <label class="text-sm"
+             >TOBI Token (EVM)
+             <input
+               id="inchOut"
+               class="mt-1 w-full h-11 rounded-md bg-white/5 border border-white/10 px-3"
+               placeholder="Paste ERC-20 address"
+             />
+           </label>
+         </div>
+         <div class="mt-3">
+           <button id="mountInch" class="btn btn-primary w-full">
+             Open 1inch Widget
+           </button>
+         </div>
+         <div id="inchWrap" class="mt-3"></div>
+         <p class="text-xs text-mute mt-2">
+           You’ll interact directly with 1inch. Use MetaMask or another EVM wallet.
+         </p>
+       </div>
+     </div>
+    </div>
+
+ </section>

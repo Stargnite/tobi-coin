@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generated Website - 9/21/2025</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>$TOBI — Humans × Friendly Aliens</title>
+        <meta
+          name="description"
+          content="$TOBI is the first-contact friendship coin for humans and friendly aliens. Swap politely. Beam responsibly. NFA. DYOR."
+        />
+        <meta name="theme-color" content="#071224" />
+        <meta property="og:title" content="$TOBI — Humans × Friendly Aliens" />
+        <meta
+          property="og:description"
+          content="A totally new landing: alien arrival background, angled ribbon header, real swaps via Jupiter (Solana) & 1inch (EVM)."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@600;700&family=VT323&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                colors: {
+                  night: "#071224",
+                  deep: "#0B1B34",
+                  panel: "#0F2748",
+                  fog: "#EAF2FF",
+                  mute: "#9FB0C8",
+                  lime: "#B7FF3C",
+                  aqua: "#3FE7FF",
+                  mag: "#FF5BC8",
+                  sun: "#FFB561",
+                },
+                boxShadow: {
+                  card: "0 18px 60px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.03)",
+                },
+              },
+            },
+          };
+        </script>
+        <style>
+          :root {
+            color-scheme: dark;
+          }
+          html {
+            scroll-behavior: smooth;
+          }
+          body {
+            margin: 0;
+            background: #071224;
+            color: #eaf2ff;
+            font-family: "DM Sans", system-ui, Segoe UI, Roboto, Arial,
+              sans-serif;
+          }
+          .hd {
+            font-family: "Sora", "DM Sans", system-ui, sans-serif;
+          }
+          .num {
+            font-family: "VT323", ui-monospace, Menlo, monospace;
+            letter-spacing: 0.5px;
+          }
+          a:focus-visible,
+          button:focus-visible,
+          input:focus-visible {
+            outline: 3px solid #3fe7ff;
+            outline-offset: 2px;
+            border-radius: 12px;
+          }
+          .card {
+            background: rgba(255, 255, 255, 0.045);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            box-shadow: var(--cs, 0 0 0 rgba(0, 0, 0, 0));
+          }
+          .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            height: 48px;
+            padding: 0 1.1rem;
+            border-radius: 14px;
+            font-weight: 800;
+          }
+          .btn-primary {
+            background: linear-gradient(90deg, #b7ff3c, #3fe7ff 55%, #ff5bc8);
+            color: #0a1426;
+            box-shadow: 0 16px 48px rgba(63, 231, 255, 0.22);
+          }
+          .btn-ghost {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+          }
+          .badge {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 999px;
+            padding: 0.22rem 0.6rem;
+            font-size: 0.72rem;
+          }
+
+          /* ===== Angled Ribbon Header (fixed alignment) ===== */
+          .ribbon {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 96px;
+            z-index: 60;
+            pointer-events: none;
+          }
+          .ribbon .bar {
+            pointer-events: auto;
+            transform: skewY(-4deg); /* barra permanece inclinada */
+            transform-origin: top left;
+            background: linear-gradient(
+              90deg,
+              #0f2748 0%,
+              #152e5a 40%,
+              #0f2748 100%
+            );
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            padding-top: 6px;
+            padding-bottom: 10px; /* compensa a inclinação */
+          }
+          .ribbon-inner {
+            transform: skewY(4deg); /* conteúdo reto */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+          .rcta {
+            margin-left: auto;
+          }
+          .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+          .logo b {
+            font-weight: 800;
+          }
+          .tab {
+            padding: 0.55rem 0.9rem;
+            border-radius: 12px;
+          }
+          .tab:hover {
+            background: rgba(255, 255, 255, 0.06);
+          }
+
+          /* ===== Bottom Dock Nav ===== */
+          .dock {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 16px;
+            z-index: 60;
+            width: min(760px, 92vw);
+            background: rgba(15, 39, 72, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(10px);
+            border-radius: 18px;
+            display: flex;
+            gap: 6px;
+            padding: 8px;
+            justify-content: space-around;
+          }
+          .dock a {
+            display: grid;
+            place-items: center;
+            height: 44px;
+            width: 44px;
+            border-radius: 12px;
+          }
+          .dock a:hover {
+            background: rgba(255, 255, 255, 0.06);
+          }
+
+          /* ===== Cinematic Background: Earth horizon + skyline + UFO fleet ===== */
+          #arrival {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            pointer-events: none;
+          }
+          #parallax {
+            position: fixed;
+            inset: -8%;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.3;
+            filter: blur(28px);
+            background: radial-gradient(
+                900px 640px at 15% 85%,
+                rgba(183, 255, 60, 0.28),
+                transparent 60%
+              ),
+              radial-gradient(
+                1100px 760px at 85% 20%,
+                rgba(63, 231, 255, 0.28),
+                transparent 65%
+              ),
+              radial-gradient(
+                1000px 720px at 50% 0%,
+                rgba(255, 91, 200, 0.18),
+                transparent 70%
+              );
+          }
+
+          /* Modal */
+          .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            z-index: 70;
+          }
+          .modal.show {
+            display: flex;
+          }
+
+          /* Table */
+          .table th,
+          .table td {
+            padding: 0.65rem 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          }
+
+          /* Responsivo do header */
+          @media (max-width: 640px) {
+            .ribbon {
+              height: 88px;
+            }
+            .ribbon .bar {
+              transform: skewY(-3deg);
+            }
+            .ribbon-inner {
+              transform: skewY(3deg);
+              padding: 12px 14px;
+            }
+          }
+        </style>
+      </head>
+      <body class="dark">
+        <a class="sr-only focus:not-sr-only" href="#main">Skip to content</a>
+
+        <!-- Background -->
+        <canvas id="arrival" aria-hidden="true"></canvas>
+        <div id="parallax" aria-hidden="true"></div>
+
+        <!-- Angled Ribbon Header -->
+        <div class="ribbon">
+          <div class="bar">
+            <div class="ribbon-inner">
+              <div class="logo">
+                <svg class="w-9 h-9" viewBox="0 0 64 64" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#B7FF3C" />
+                      <stop offset="1" stop-color="#3FE7FF" />
+                    </linearGradient>
+                  </defs>
+                  <rect
+                    width="64"
+                    height="64"
+                    rx="16"
+                    fill="#0B1B34"
+                    stroke="rgba(255,255,255,.15)"
+                  />
+                  <circle cx="32" cy="32" r="20" fill="url(#g)" opacity=".35" />
+                </svg>
+                <div>
+                  <div class="hd text-lg">$TOBI</div>
+                  <div class="text-[11px] text-mute">
+                    Humans × Friendly Aliens
+                  </div>
+                </div>
+              </div>
+              <nav class="hidden md:flex items-center gap-1 ml-2">
+                <a class="tab" href="#about">About</a>
+                <a class="tab" href="#swap">Swap</a>
+                <a class="tab" href="#tokenomics">Tokenomics</a>
+                <a class="tab" href="#roadmap">Roadmap</a>
+                <a class="tab" href="#faq">FAQ</a>
+                <a class="tab" href="#community">Community</a>
+              </nav>
+              <div class="rcta">
+                <a href="#swap" class="btn btn-primary">Beam me $TOBI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Dock -->
+        <nav class="dock" aria-label="Dock navigation">
+          <a href="#about" title="About">🧑‍🚀</a>
+          <a href="#swap" title="Swap">🔁</a>
+          <a href="#tokenomics" title="Tokenomics">📊</a>
+          <a href="#how" title="How to Buy">🛒</a>
+          <a href="#roadmap" title="Roadmap">🗺️</a>
+          <a href="#faq" title="FAQ">❓</a>
+          <a href="#community" title="Community">👾</a>
+        </nav>
+
+        <main
+          id="main"
+          class="max-w-6xl mx-auto px-5 md:px-8 pt-[120px] pb-28 space-y-12"
+        >
+          <!-- HERO -->
+          <section class="card p-7 md:p-12 overflow-hidden relative">
+            <div
+              class="absolute -left-10 -top-10 w-40 h-40 rounded-full"
+              style="
+                background: radial-gradient(
+                  circle,
+                  #b7ff3c 0%,
+                  transparent 70%
+                );
+                filter: blur(28px);
+                opacity: 0.25;
+              "
+            ></div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h1 class="hd text-5xl md:text-6xl leading-[1.05]">
+                  Welcome to **First Contact Finance**.
+                </h1>
+                <p class="mt-3 text-lg text-mute">
+                  $TOBI is the <b>astronaut-alien friendship coin</b> — the
+                  polite way to trade when our new neighbors land and ask “gm,
+                  where swap?”
+                </p>
+                <div class="mt-5 flex flex-wrap gap-3">
+                  <a href="#swap" class="btn btn-primary">Swap for $TOBI</a>
+                  <a href="#about" class="btn btn-ghost">Why $TOBI?</a>
+                </div>
+                <div class="mt-4 flex flex-wrap items-center gap-2 text-xs">
+                  <span class="badge">No financial advice</span
+                  ><span class="badge">Verify contracts</span
+                  ><span class="badge">Interstellar manners</span>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5 text-sm">
+                  <div class="card p-3">
+                    <div class="text-mute">Supply</div>
+                    <b class="num text-2xl">1,000,000,000</b>
+                  </div>
+                  <div class="card p-3">
+                    <div class="text-mute">Ticker</div>
+                    <b class="num text-2xl">$TOBI</b>
+                  </div>
+                  <div class="card p-3">
+                    <div class="text-mute">Contract</div>
+                    <button id="copyCA" class="underline decoration-dotted">
+                      TBA
+                    </button>
+                  </div>
+                  <div class="card p-3">
+                    <div class="text-mute">Species</div>
+                    <b>Humans + Friends</b>
+                  </div>
+                </div>
+              </div>
+              <div aria-hidden="true" class="relative">
+                <svg
+                  viewBox="0 0 520 360"
+                  class="w-full max-w-xl mx-auto drop-shadow"
+                >
+                  <defs>
+                    <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#B7FF3C" />
+                      <stop offset="1" stop-color="#3FE7FF" />
+                    </linearGradient>
+                  </defs>
+                  <ellipse
+                    cx="260"
+                    cy="180"
+                    rx="200"
+                    ry="140"
+                    fill="url(#lg2)"
+                    opacity=".14"
+                  />
+                  <!-- goofy astronaut + handshake beam -->
+                  <g>
+                    <circle
+                      cx="160"
+                      cy="110"
+                      r="32"
+                      fill="#0B1B34"
+                      stroke="#3FE7FF"
+                      stroke-width="5"
+                    />
+                    <rect
+                      x="128"
+                      y="140"
+                      width="64"
+                      height="78"
+                      rx="14"
+                      fill="#123359"
+                      stroke="#B7FF3C"
+                      stroke-width="3"
+                    />
+                    <rect
+                      x="140"
+                      y="154"
+                      width="40"
+                      height="14"
+                      rx="6"
+                      fill="#B7FF3C"
+                    />
+                    <path
+                      d="M192 160 q30 10 40 40"
+                      stroke="#FF5BC8"
+                      stroke-width="6"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                  <g>
+                    <ellipse
+                      cx="360"
+                      cy="120"
+                      rx="70"
+                      ry="18"
+                      fill="#3FE7FF"
+                      opacity=".9"
+                    />
+                    <ellipse
+                      cx="360"
+                      cy="116"
+                      rx="48"
+                      ry="12"
+                      fill="#B7FF3C"
+                      opacity=".95"
+                    />
+                    <circle
+                      cx="360"
+                      cy="100"
+                      r="20"
+                      fill="#123359"
+                      stroke="#B7FF3C"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M200 170 L 360 100"
+                      stroke="#3FE7FF"
+                      stroke-width="4"
+                      stroke-dasharray="6 6"
+                      opacity=".8"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </section>
+
+          <!-- ABOUT -->
+          <section id="about" class="space-y-4">
+            <h2 class="hd text-3xl">Why $TOBI?</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="card p-5">
+                <div class="text-2xl">🧑‍🚀</div>
+                <b class="block mt-2">Explorer Humor</b>
+                <p class="text-sm text-mute mt-1">
+                  We lead with curiosity and memes. If it’s not fun, it’s not
+                  first contact.
+                </p>
+              </div>
+              <div class="card p-5">
+                <div class="text-2xl">👽</div>
+                <b class="block mt-2">Alien-Friendly</b>
+                <p class="text-sm text-mute mt-1">
+                  A welcoming culture for our new friends. Step one: teach them
+                  “gm”.
+                </p>
+              </div>
+              <div class="card p-5">
+                <div class="text-2xl">🛰️</div>
+                <b class="block mt-2">Community Engine</b>
+                <p class="text-sm text-mute mt-1">
+                  Raids, art drops, “first-contact quests”, and sticker cNFTs
+                  (mock).
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SWAP (Live Widgets) -->
+          <section id="swap" class="card p-6">
+            <div class="flex items-center justify-between flex-wrap gap-3">
+              <h2 class="hd text-3xl">Swap for $TOBI</h2>
+              <div class="text-xs text-mute flex gap-2">
+                <span class="badge">Live widgets</span
+                ><span class="badge">Paste token/mint</span>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 mt-4">
+              <!-- Solana / Jupiter -->
+              <div class="card p-4">
+                <div class="flex items-center justify-between gap-3">
+                  <b class="hd text-xl">Solana — Jupiter</b>
+                  <a
+                    class="text-xs underline"
+                    href="https://jup.ag"
+                    target="_blank"
+                    rel="noopener"
+                    >jup.ag</a
+                  >
+                </div>
+                <label class="text-sm mt-3"
+                  >TOBI Mint (Solana)
+                  <input
+                    id="solMint"
+                    class="mt-1 w-full h-11 rounded-md bg-white/5 border border-white/10 px-3"
+                    placeholder="Paste SPL mint (e.g., So111... for SOL)"
+                  />
+                </label>
+                <div class="mt-3">
+                  <button id="mountJup" class="btn btn-primary w-full">
+                    Open Jupiter Terminal
+                  </button>
+                </div>
+                <div id="jupWrap" class="mt-3"></div>
+                <p class="text-xs text-mute mt-2">
+                  You’ll interact directly with Jupiter. Use Phantom/Backpack.
+                </p>
+              </div>
+
+              <!-- EVM / 1inch -->
+              <div class="card p-4">
+                <div class="flex items-center justify-between gap-3">
+                  <b class="hd text-xl">EVM — 1inch</b>
+                  <a
+                    class="text-xs underline"
+                    href="https://app.1inch.io"
+                    target="_blank"
+                    rel="noopener"
+                    >1inch</a
+                  >
+                </div>
+                <div class="grid md:grid-cols-2 gap-3 mt-3">
+                  <label class="text-sm"
+                    >Chain
+                    <select
+                      id="inchChain"
+                      class="mt-1 w-full h-11 rounded-md bg-white/5 border border-white/10 px-3"
+                    >
+                      <option value="1">Ethereum</option>
+                      <option value="56">BNB Chain</option>
+                      <option value="137">Polygon</option>
+                      <option value="42161">Arbitrum</option>
+                      <option value="10">OP Mainnet</option>
+                    </select>
+                  </label>
+                  <label class="text-sm"
+                    >TOBI Token (EVM)
+                    <input
+                      id="inchOut"
+                      class="mt-1 w-full h-11 rounded-md bg-white/5 border border-white/10 px-3"
+                      placeholder="Paste ERC-20 address"
+                    />
+                  </label>
+                </div>
+                <div class="mt-3">
+                  <button id="mountInch" class="btn btn-primary w-full">
+                    Open 1inch Widget
+                  </button>
+                </div>
+                <div id="inchWrap" class="mt-3"></div>
+                <p class="text-xs text-mute mt-2">
+                  You’ll interact directly with 1inch. Use MetaMask or another
+                  EVM wallet.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- TOKENOMICS -->
+          <section id="tokenomics" class="card p-6">
+            <div class="flex items-center justify-between flex-wrap gap-3">
+              <h2 class="hd text-3xl">Tokenomics</h2>
+              <div class="text-xs text-mute flex gap-2">
+                <span class="badge">Tax: 0%</span
+                ><span class="badge">Supply: 1B</span>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+              <div class="grid gap-3">
+                <div class="text-sm text-mute">Distribution</div>
+                <ul class="text-sm mt-1 space-y-1">
+                  <li>
+                    <span
+                      class="inline-block w-3 h-3 rounded-full"
+                      style="background: #b7ff3c"
+                    ></span>
+                    60% Liquidity / Fair Launch
+                  </li>
+                  <li>
+                    <span
+                      class="inline-block w-3 h-3 rounded-full"
+                      style="background: #3fe7ff"
+                    ></span>
+                    25% Community / Quests
+                  </li>
+                  <li>
+                    <span
+                      class="inline-block w-3 h-3 rounded-full"
+                      style="background: #ff5bc8"
+                    ></span>
+                    10% Marketing / CEX
+                  </li>
+                  <li>
+                    <span
+                      class="inline-block w-3 h-3 rounded-full"
+                      style="background: #ffb561"
+                    ></span>
+                    5% Team (6-mo lock)
+                  </li>
+                </ul>
+                <div class="mt-3">
+                  Contract:
+                  <button id="copyCA2" class="underline decoration-dotted">
+                    TBA
+                  </button>
+                </div>
+              </div>
+              <div>
+                <svg viewBox="0 0 220 220" class="w-full max-w-xs mx-auto">
+                  <circle
+                    cx="110"
+                    cy="110"
+                    r="90"
+                    stroke="#14335C"
+                    stroke-width="26"
+                    fill="none"
+                  />
+                  <circle
+                    cx="110"
+                    cy="110"
+                    r="90"
+                    stroke="#B7FF3C"
+                    stroke-width="26"
+                    fill="none"
+                    stroke-dasharray="565"
+                    stroke-dashoffset="0"
+                    pathLength="100"
+                    transform="rotate(-90 110 110)"
+                  />
+                  <circle
+                    cx="110"
+                    cy="110"
+                    r="90"
+                    stroke="#3FE7FF"
+                    stroke-width="26"
+                    fill="none"
+                    stroke-dasharray="565"
+                    stroke-dashoffset="-60"
+                    pathLength="100"
+                    transform="rotate(-90 110 110)"
+                  />
+                  <circle
+                    cx="110"
+                    cy="110"
+                    r="90"
+                    stroke="#FF5BC8"
+                    stroke-width="26"
+                    fill="none"
+                    stroke-dasharray="565"
+                    stroke-dashoffset="-85"
+                    pathLength="100"
+                    transform="rotate(-90 110 110)"
+                  />
+                  <circle
+                    cx="110"
+                    cy="110"
+                    r="90"
+                    stroke="#FFB561"
+                    stroke-width="26"
+                    fill="none"
+                    stroke-dasharray="565"
+                    stroke-dashoffset="-95"
+                    pathLength="100"
+                    transform="rotate(-90 110 110)"
+                  />
+                </svg>
+              </div>
+            </div>
+          </section>
+
+          <!-- HOW TO BUY -->
+          <section id="how" class="space-y-4">
+            <h2 class="hd text-3xl">How to Buy (peacefully)</h2>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="card p-5">
+                <div class="text-2xl">1️⃣</div>
+                <b class="block mt-2">Get a Wallet</b>
+                <p class="text-sm text-mute mt-1">
+                  Phantom (Solana) or MetaMask (EVM). Back up your seed; do not
+                  DM it to UFOs.
+                </p>
+              </div>
+              <div class="card p-5">
+                <div class="text-2xl">2️⃣</div>
+                <b class="block mt-2">Fund It</b>
+                <p class="text-sm text-mute mt-1">
+                  Acquire SOL/ETH/… and send to your wallet.
+                </p>
+              </div>
+              <div class="card p-5">
+                <div class="text-2xl">3️⃣</div>
+                <b class="block mt-2">Swap Below</b>
+                <p class="text-sm text-mute mt-1">
+                  Use the widgets, paste the official $TOBI address, and swap.
+                </p>
+              </div>
+            </div>
+            <p class="text-xs text-mute">
+              This is entertainment. NFA. Always verify contracts and URLs.
+            </p>
+          </section>
+
+          <!-- ROADMAP -->
+          <section id="roadmap" class="card p-6">
+            <h2 class="hd text-3xl">Roadmap</h2>
+            <div class="grid md:grid-cols-5 gap-4 mt-4">
+              <div class="card p-4">
+                <div class="text-2xl">🚀</div>
+                <b>Launchpad</b>
+                <p class="text-sm text-mute">Site, socials, sticker pack.</p>
+              </div>
+              <div class="card p-4">
+                <div class="text-2xl">🛰️</div>
+                <b>Orbit</b>
+                <p class="text-sm text-mute">Quests, raids, meme olympics.</p>
+              </div>
+              <div class="card p-4">
+                <div class="text-2xl">🪐</div>
+                <b>Wormhole</b>
+                <p class="text-sm text-mute">cNFT badges (mock), treasury.</p>
+              </div>
+              <div class="card p-4">
+                <div class="text-2xl">🛸</div>
+                <b>First Contact</b>
+                <p class="text-sm text-mute">
+                  “Alien AMA”, cross-chain bridges.
+                </p>
+              </div>
+              <div class="card p-4">
+                <div class="text-2xl">🌕</div>
+                <b>Moon Camp</b>
+                <p class="text-sm text-mute">Art drops, merch, listings.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ -->
+          <section id="faq" class="card p-6">
+            <h2 class="hd text-3xl">FAQ</h2>
+            <div class="mt-3">
+              <details class="p-3 border-b border-white/10">
+                <summary class="font-semibold cursor-pointer">
+                  Is this financial advice?
+                </summary>
+                <p class="mt-2 text-sm text-mute">
+                  No. $TOBI is for culture and jokes. DYOR.
+                </p>
+              </details>
+              <details class="p-3 border-b border-white/10">
+                <summary class="font-semibold cursor-pointer">
+                  Will aliens actually trade $TOBI?
+                </summary>
+                <p class="mt-2 text-sm text-mute">
+                  If they’re friendly and on-chain, yes. We’ll help them set up
+                  wallets.
+                </p>
+              </details>
+              <details class="p-3">
+                <summary class="font-semibold cursor-pointer">
+                  Where to verify?
+                </summary>
+                <p class="mt-2 text-sm text-mute">
+                  Use official explorers when contracts are published. Beware
+                  random QR codes from saucers.
+                </p>
+              </details>
+            </div>
+          </section>
+
+          <!-- COMMUNITY & FINAL CTA -->
+          <section
+            id="community"
+            class="card p-6 flex flex-col md:flex-row items-center justify-between gap-4"
+          >
+            <div>
+              <h2 class="hd text-2xl">Join the $TOBI Crew</h2>
+              <p class="text-sm text-mute mt-1">
+                Be nice, beam joy, share memes. That’s interstellar diplomacy.
+              </p>
+              <div class="flex flex-wrap gap-3 mt-3">
+                <a
+                  class="btn btn-ghost"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                  >X / Twitter</a
+                >
+                <a
+                  class="btn btn-ghost"
+                  href="https://t.me"
+                  target="_blank"
+                  rel="noopener"
+                  >Telegram</a
+                >
+                <a class="btn btn-ghost" href="#" id="copyRef"
+                  >Copy Referral Link</a
+                >
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <a class="btn btn-primary" href="#swap">Swap Now</a>
+              <a class="btn btn-ghost" href="#faq">Read FAQ</a>
+            </div>
+          </section>
+        </main>
+
+        <footer class="border-t border-white/10 py-6">
+          <div
+            class="max-w-6xl mx-auto px-5 md:px-8 text-xs flex flex-wrap items-center justify-between gap-3 text-mute"
+          >
+            <div>
+              © 2025 $TOBI Collective — Space-themed meme. No financial advice.
+            </div>
+            <nav class="flex items-center gap-4">
+              <a href="#faq" class="hover:opacity-80">FAQ</a
+              ><span class="badge">alpha</span>
+            </nav>
+          </div>
+        </footer>
+
+        <!-- Modal -->
+        <div
+          id="modal"
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modalTitle"
+        >
+          <div class="card max-w-xl w-full p-5">
+            <div class="flex items-center justify-between">
+              <h3 id="modalTitle" class="hd text-xl">Heads-up</h3>
+              <button id="closeModal" class="btn btn-ghost h-10">Close</button>
+            </div>
+            <div id="modalBody" class="mt-3 text-sm text-mute">Content</div>
+          </div>
+        </div>
+
+        <!-- Jupiter & 1inch -->
+        <script defer src="https://terminal.jup.ag/main-v2.js"></script>
+        <script defer src="https://widgets.1inch.io/1inch.widget.js"></script>
+
+        <script>
+          /* Utils */
+          const $ = (s) => document.querySelector(s),
+            $$ = (s) => document.querySelectorAll(s);
+          const ls = (k, v) =>
+            v === undefined
+              ? JSON.parse(localStorage.getItem(k) || "null")
+              : localStorage.setItem(k, JSON.stringify(v));
+          const toast = (m) => {
+            const t = document.createElement("div");
+            t.className =
+              "fixed bottom-20 right-4 px-3 py-2 rounded-lg text-sm font-bold";
+            t.style.background = "#3FE7FF";
+            t.style.color = "#0A1426";
+            t.style.boxShadow = "0 12px 36px rgba(63,231,255,.35)";
+            t.textContent = m;
+            document.body.appendChild(t);
+            setTimeout(() => t.remove(), 1500);
+          };
+
+          /* Copy helpers & referral */
+          function copy(x) {
+            navigator.clipboard.writeText(x).then(() => toast("Copied!"));
+          }
+          $("#copyCA")?.addEventListener("click", () =>
+            copy("TOBI_CONTRACT_TBA")
+          );
+          $("#copyCA2")?.addEventListener("click", () =>
+            copy("TOBI_CONTRACT_TBA")
+          );
+          $("#copyRef")?.addEventListener("click", () => {
+            const code = (
+              ls("ref") || Math.random().toString(36).slice(2, 8)
+            ).toUpperCase();
+            ls("ref", code);
+            const u = new URL(location.href);
+            u.searchParams.set("ref", code);
+            copy(u.toString());
+          });
+
+          /* Modal */
+          const modal = $("#modal"),
+            modalTitle = $("#modalTitle"),
+            modalBody = $("#modalBody");
+          function openModal(t, b) {
+            modalTitle.textContent = t;
+            modalBody.innerHTML = b;
+            modal.classList.add("show");
+          }
+          $("#closeModal").onclick = () => modal.classList.remove("show");
+          addEventListener("keydown", (e) => {
+            if (e.key === "Escape") modal.classList.remove("show");
+          });
+
+          /* Jupiter Terminal (Solana) */
+          $("#mountJup")?.addEventListener("click", () => {
+            if (!window.Jupiter) {
+              toast("Loading Jupiter…");
+              return;
+            }
+            const outMint = ($("#solMint").value || "").trim();
+            const wrap = $("#jupWrap");
+            wrap.innerHTML = "";
+            window.Jupiter.init({
+              container: wrap,
+              integratorId: "tobi-arrival",
+              displayMode: "integrated",
+              endpoint: "https://api.mainnet-beta.solana.com",
+              strictTokenList: false,
+              defaultExplorer: "SolanaFM",
+              formProps: {
+                fixedOutputMint: !!outMint,
+                initialOutputMint: outMint || undefined,
+              },
+            });
+          });
+
+          /* 1inch Widget (EVM) */
+          $("#mountInch")?.addEventListener("click", () => {
+            if (!window.OneInchWidget) {
+              toast("Loading 1inch…");
+              return;
+            }
+            const chainId = parseInt($("#inchChain").value || "1", 10);
+            const outToken = ($("#inchOut").value || "").trim();
+            const wrap = $("#inchWrap");
+            wrap.innerHTML = "";
+            const widget = new window.OneInchWidget({
+              chainId,
+              fromTokenAddress: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+              toTokenAddress:
+                outToken || "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+              amount: "100000000000000000",
+              theme: "dark",
+              host: wrap,
+              slippage: 1,
+              sourceAmount: true,
+            });
+            widget.init();
+          });
+
+          /* Cinematic Background: Earth horizon + skyline + UFO fleet */
+          (function () {
+            const c = document.getElementById("arrival");
+            const ctx = c.getContext("2d");
+            let W, H;
+            function fit() {
+              W = c.width = innerWidth;
+              H = c.height = innerHeight;
+            }
+            fit();
+            addEventListener("resize", fit, { passive: true });
+            const reduce = matchMedia(
+              "(prefers-reduced-motion: reduce)"
+            ).matches;
+            const skyline = Array.from({ length: 24 }, (_, i) => ({
+              x: (i / 24) * W,
+              w: (W / 24) * 0.9,
+              h: H * 0.18 + Math.random() * H * 0.12,
+            }));
+            const ufos = Array.from({ length: 8 }, () => ({
+              x: Math.random() * W,
+              y: -50 - Math.random() * 200,
+              s: 0.7 + Math.random() * 0.8,
+              vy: 0.3 + Math.random() * 0.4,
+              t: Math.random() * 6,
+            }));
+            let t = 0;
+            function drawSky() {
+              const g = ctx.createLinearGradient(0, 0, 0, H);
+              g.addColorStop(0, "#071224");
+              g.addColorStop(0.5, "#0B1B34");
+              g.addColorStop(1, "#0A1830");
+              ctx.fillStyle = g;
+              ctx.fillRect(0, 0, W, H);
+              // horizon glow
+              const hg = ctx.createRadialGradient(
+                W / 2,
+                H * 1.05,
+                20,
+                W / 2,
+                H * 1.05,
+                H * 0.8
+              );
+              hg.addColorStop(0, "rgba(63,231,255,.18)");
+              hg.addColorStop(1, "rgba(63,231,255,0)");
+              ctx.fillStyle = hg;
+              ctx.beginPath();
+              ctx.arc(W / 2, H * 1.05, H * 0.8, 0, Math.PI * 2);
+              ctx.fill();
+            }
+            function drawSkyline() {
+              ctx.fillStyle = "rgba(255,255,255,.06)";
+              skyline.forEach((b) => {
+                ctx.fillRect(b.x, H - b.h, b.w, b.h);
+                // windows
+                ctx.fillStyle = "rgba(255,255,255,.05)";
+                for (let y = H - b.h + 10; y < H - 10; y += 16) {
+                  for (let x = b.x + 6; x < b.x + b.w - 6; x += 18) {
+                    if ((x + y) % 3 === 0) {
+                      ctx.fillRect(x, y, 3, 6);
+                    }
+                  }
+                }
+                ctx.fillStyle = "rgba(255,255,255,.06)";
+              });
+              // ground line
+              ctx.fillStyle = "rgba(255,255,255,.08)";
+              ctx.fillRect(0, H * 0.82, W, 2);
+            }
+            function drawUFO(u) {
+              // saucer
+              ctx.save();
+              ctx.translate(u.x, u.y);
+              const w = 80 * u.s,
+                h = 18 * u.s;
+              ctx.globalAlpha = 0.95;
+              let g = ctx.createLinearGradient(-w, 0, w, 0);
+              g.addColorStop(0, "#3FE7FF");
+              g.addColorStop(1, "#B7FF3C");
+              ctx.fillStyle = g;
+              ctx.beginPath();
+              ctx.ellipse(0, 0, w, h, 0, 0, Math.PI * 2);
+              ctx.fill();
+              ctx.fillStyle = "#102B4E";
+              ctx.beginPath();
+              ctx.arc(0, -h * 0.8, 12 * u.s, 0, Math.PI * 2);
+              ctx.fill();
+              // lights
+              ctx.fillStyle = "#FF5BC8";
+              for (let i = -2; i <= 2; i++) {
+                ctx.beginPath();
+                ctx.arc(i * w * 0.25, 0, 3.2 * u.s, 0, Math.PI * 2);
+                ctx.fill();
+              }
+              // beam
+              const beamH = Math.max(0, H * 0.82 - u.y - h * 0.5);
+              const bg = ctx.createLinearGradient(0, 0, 0, beamH);
+              bg.addColorStop(0, "rgba(63,231,255,.35)");
+              bg.addColorStop(1, "rgba(183,255,60,.02)");
+              ctx.fillStyle = bg;
+              ctx.beginPath();
+              ctx.moveTo(-w * 0.25, h * 0.6);
+              ctx.lineTo(w * 0.25, h * 0.6);
+              ctx.lineTo(w * 0.6, beamH);
+              ctx.lineTo(-w * 0.6, beamH);
+              ctx.closePath();
+              ctx.fill();
+              ctx.restore();
+            }
+            function loop() {
+              if (reduce) {
+                ctx.clearRect(0, 0, W, H);
+                return;
+              }
+              t += 0.008;
+              drawSky();
+              drawSkyline();
+              ufos.forEach((u) => {
+                u.t += 0.01;
+                u.x += Math.sin(u.t) * 0.6;
+                u.y += u.vy;
+                if (u.y > H * 0.65) (u.y = -80), (u.x = Math.random() * W); // recycle
+                drawUFO(u);
+              });
+              requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+          })();
+        </script>
+      </body>
+    </html>
+  </body>
+</html>
