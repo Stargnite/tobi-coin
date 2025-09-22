@@ -1,0 +1,21 @@
+{
+  "name": "tobi-coin",
+  "version": "1.0.0",
+  "description": "Website created: Generated Website - 9/21/2025",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build step required'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "website",
+    "html",
+    "css",
+    "javascript",
+    "snapsite"
+  ],
+  "author": "sobayotoby@gmail.com",
+  "license": "MIT"
+}
